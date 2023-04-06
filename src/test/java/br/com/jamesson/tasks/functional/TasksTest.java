@@ -100,7 +100,7 @@ public class TasksTest {
 
       driver.findElement(By.xpath("//a[@class='btn btn-outline-danger btn-sm']")).click();
       message = driver.findElement(By.id("message")).getText();
-      Assert.assertEquals("Due date must not be in past", message);
+      Assert.assertEquals("Success!", message);
 
     } finally {
       driver.quit();
